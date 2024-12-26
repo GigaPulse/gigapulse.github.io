@@ -1,0 +1,94 @@
+/* Общие стили */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Заголовок */
+.header {
+  background: linear-gradient(45deg, #ff6b6b, #f8e71c);
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.main-title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #fff;
+  color: #ff6b6b;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.cta-button:hover {
+  transform: scale(1.1);
+}
+
+/* Секции */
+.about {
+  background: #f8f9fa;
+  padding: 50px 20px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  background: #6c757d;
+  color: #fff;
+  padding: 50px 20px;
+}
+
+.feature {
+  max-width: 300px;
+  animation: slideUp 1s ease-out;
+}
+
+/* Подвал */
+.footer {
+  background: #343a40;
+  color: #fff;
+  padding: 20px 0;
+}
+
+/* Анимации */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
